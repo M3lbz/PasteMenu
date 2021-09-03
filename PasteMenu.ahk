@@ -20,7 +20,7 @@ RefreshMenu() {
 
     ; Add a seperator and a refresh option
     Menu PasteMenu, Add
-    Menu PasteMenu, Add, "Refresh Menu", RefreshMenu
+    Menu PasteMenu, Add, Refresh Menu, RefreshMenu
 
 }
 
