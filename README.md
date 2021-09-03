@@ -8,13 +8,36 @@ By default the menu trigger is `ctrl + alt + V`
 
 Install [AutoHotKey](https://www.autohotkey.com/) on your machine
 
-Pull down the Repo and double click the .ahkfile
+Pull down the Repo and right click the .ahk file and run as administrator
+
+## Run on startup
+
+Navigate to the startup folder:
+
+`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`
+
+Create a shortcut with the following options:
+
+```
+Target: "C:\Program Files\AutoHotkey\AutoHotkey.exe" C:\Path\to\Paste\dir\PasteMenu.ahk
+
+Start in: C:\Path\to\Paste\dir\
+
+Click "Advanced" and make sure "Run as administrator" is checked
+```
 
 ## Usage
 
-In the same folder as the .ahk file create txt files where the Name is the text in the menu and the content is what you want to paste.
+- `ctrl` + `alt` + `c` - Copy highlighted text to menu
+- `ctrl` + `alt` + `v` - Show menu of items to paste
 
-Be sure to change the extension to .paste as that's what the script looks for to create the menu
+You can create .paste files manully in the same directory as the ahk file.
+
+The file name will become the name on the menu.
+
+Clicking the item will paste the files content line by line
+
+Be sure to change the extension to .paste as that's what the script looks for to create the menu.
 
 ## Contributing
 Pull requests are welcome. But keep in mind I am not actively updating this Repo!
