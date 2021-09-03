@@ -8,11 +8,15 @@ By default the menu trigger is `ctrl + alt + V`
 
 Install [AutoHotKey](https://www.autohotkey.com/) on your machine
 
-Pull down the Repo and double click the .ahkfile
+Pull down the Repo and double click the .ahk file
 
 ## Usage
 
-In the same folder as the .ahk file create txt files where the Name is the text in the menu and the content is what you want to paste.
+You can create .paste files in the same directory as the ahk file.
+
+The file name will become the name on the menu.
+
+Clicking the item will paste the files content line by line
 
 Be sure to change the extension to .paste as that's what the script looks for to create the menu
 

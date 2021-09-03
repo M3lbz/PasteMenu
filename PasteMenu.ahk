@@ -27,6 +27,7 @@ RefreshMenu() {
 ; Accepts a file name and pastes its content adding new lines at the begining of each new line after the first
 PasteContents(filePath)
 {
+    Send, %filePath%
     Loop, read, %filePath%
     {
         if (A_Index != 1)
