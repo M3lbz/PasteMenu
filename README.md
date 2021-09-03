@@ -1,6 +1,8 @@
 # PasteMenu
 
-PasteMenu is an AutoHotKey script that 
+PasteMenu is an AutoHotKey script that allows you to set up a local PasteBin that is accessible via a menu triggered by a keyboard shortcut.
+
+By default the menu trigger is `ctrl + alt + V`
 
 ## Installation
 
