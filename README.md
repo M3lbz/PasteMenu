@@ -8,7 +8,23 @@ By default the menu trigger is `ctrl + alt + V`
 
 Install [AutoHotKey](https://www.autohotkey.com/) on your machine
 
-Pull down the Repo and double click the .ahk file
+Pull down the Repo and right click the .ahk file and run as administrator
+
+## Run on startup
+
+Navigate to the startup folder:
+
+`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`
+
+Create a shortcut with the following options:
+
+```
+Target: "C:\Program Files\AutoHotkey\AutoHotkey.exe" C:\Path\to\Paste\dir\PasteMenu.ahk
+
+Start in: C:\Path\to\Paste\dir\
+
+Click "Advanced" and make sure "Run as administrator" is checked
+```
 
 ## Usage
 
