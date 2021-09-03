@@ -1,0 +1,24 @@
+name: Example usage of GitHub-Action-Ahk2Exe and softprops/action-gh-release
+
+on: push
+
+jobs:
+  Release:
+    name: Release
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Ahk2Exe
+        uses: nekocodeX/GitHub-Action-Ahk2Exe@main
+        with:
+          in: PasteMenu.ahk
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: PasteMenu.exe
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
