@@ -40,6 +40,7 @@ ClipToFile()
 
   Clipboard = %ClipSaved% ; put your original clipboard back how it was
 
+
   RefreshMenu() ; Refresh the menu     
 }
 

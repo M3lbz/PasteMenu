@@ -31,7 +31,8 @@ Click "Advanced" and make sure "Run as administrator" is checked
 - `ctrl` + `alt` + `c` - Copy highlighted text to menu
 - `ctrl` + `alt` + `v` - Show menu of items to paste
 
-You can create .paste files manully in the same directory as the ahk file.
+You can create .paste files manually in the same directory as the ahk file.
+
 
 The file name will become the name on the menu.
 
