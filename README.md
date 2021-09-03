@@ -28,13 +28,17 @@ Click "Advanced" and make sure "Run as administrator" is checked
 
 ## Usage
 
-You can create .paste files in the same directory as the ahk file.
+- `ctrl` + `alt` + `c` - Copy highlighted text to menu
+- `ctrl` + `alt` + `v` - Show menu of items to paste
+
+You can create .paste files manually in the same directory as the ahk file.
+
 
 The file name will become the name on the menu.
 
 Clicking the item will paste the files content line by line
 
-Be sure to change the extension to .paste as that's what the script looks for to create the menu
+Be sure to change the extension to .paste as that's what the script looks for to create the menu.
 
 ## Contributing
 Pull requests are welcome. But keep in mind I am not actively updating this Repo!

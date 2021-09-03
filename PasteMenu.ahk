@@ -24,6 +24,26 @@ RefreshMenu() {
 
 }
 
+ClipToFile()
+{
+  ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable.
+  Clipboard :=  ; clear Clipboard
+  Send ^c ; Copy whats under the mouse
+  ClipWait, 0.2 ; Wait for the clipboard to update
+  FileContents := Clipboard ; get the new clipboard into a variable
+
+  InputBox, ClipFilename, Clip, Name this clip, , 320, 100 ; Ask the user for a filename
+  if ErrorLevel
+      MsgBox, Clip not saved.
+  else
+      FileAppend, %FileContents%, %ClipFilename%.paste ; Append the clipboard to the file
+
+  Clipboard = %ClipSaved% ; put your original clipboard back how it was
+
+
+  RefreshMenu() ; Refresh the menu     
+}
+
 ; Accepts a file name and pastes its content adding new lines at the begining of each new line after the first
 PasteContents(filePath)
 {
@@ -42,4 +62,7 @@ RefreshMenu()
 return
 
 ^!v::Menu, PasteMenu, Show
+return
+
+^!c::ClipToFile()
 return
