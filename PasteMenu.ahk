@@ -15,11 +15,12 @@ ScanFolder(folder, menuName) {
 
     fileFormatted := folder . A_LoopFileName . "\"
     
-    ; Create the menu item with the past function
+    ; Create the menu item
     Menu %A_LoopFileName%, Add
 
     ; Add the menu item with the past function
     Menu %menuName%, Add, %A_LoopFileName%, :%A_LoopFileName%
+
     ScanFolder(fileFormatted, A_LoopFileName)
   }
   
